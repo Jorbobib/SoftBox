@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoftBox - Утилиты для Windows</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Прелоадер -->
+    <div class="preloader" id="preloader">
+        <div class="loader">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
+
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="#" class="logo">
+                    <i class="fas fa-bolt"></i>
+                    <span>Soft<span class="highlight">Box</span></span>
+                </a>
+                
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Главная</a></li>
+                    <li><a href="#software">Утилиты</a></li>
+                    <li><a href="#features">Преимущества</a></li>
+                    <li><a href="#admin" id="showAdminBtn">Админка</a></li>
+                </ul>
+                
+                <button class="admin-btn" id="adminBtn">
+                    <i class="fas fa-cog"></i> Админка
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Главный сайт -->
+    <main id="mainSite">
+        <!-- Герой секция -->
+        <section id="home" class="hero">
+            <div class="hero-bg">
+                <div class="floating"></div>
+                <div class="floating"></div>
+            </div>
+            
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Мощные утилиты для Windows</h1>
+                    <p>Бесплатные программы для оптимизации, очистки и ускорения вашего ПК. Скачивайте без регистрации и смс!</p>
+                    
+                    <div class="cta-buttons">
+                        <a href="#software" class="btn btn-primary">
+                            <i class="fas fa-rocket"></i>
+                            Смотреть утилиты
+                        </a>
+                        <a href="#features" class="btn btn-secondary">
+                            <i class="fas fa-star"></i>
+                            Узнать больше
+                        </a>
+                    </div>
+                    
+                    <div class="stats">
+                        <div class="stat-item">
+                            <div class="stat-number" id="totalDownloads">0</div>
+                            <div class="stat-label">Всего скачиваний</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" id="totalSoftware">0</div>
+                            <div class="stat-label">Утилит в каталоге</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">4.9</div>
+                            <div class="stat-label">Средний рейтинг</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Утилиты -->
+        <section id="software" class="software-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Популярные утилиты</h2>
+                    <p>Выберите программу для оптимизации вашего компьютера</p>
+                </div>
+                
+                <!-- Утилиты будут загружаться здесь -->
+                <div class="software-grid" id="softwareGrid">
+                    <!-- Утилиты загружаются через JavaScript -->
+                </div>
+                
+                <!-- Кнопка для показа админки -->
+                <div class="default-software">
+                    <p>Хотите добавить свою утилиту?</p>
+                    <button class="btn btn-primary" id="showAdminFromMain">
+                        <i class="fas fa-plus"></i> Перейти в админку
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Преимущества -->
+        <section id="features" class="features-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Наши преимущества</h2>
+                    <p>Почему выбирают наши утилиты</p>
+                </div>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3 class="feature-title">Мгновенная скорость</h3>
+                        <p class="feature-desc">Утилиты работают быстро и не тормозят систему</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="feature-title">100% безопасность</h3>
+                        <p class="feature-desc">Все программы проверены на вирусы</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <h3 class="feature-title">Русский язык</h3>
+                        <p class="feature-desc">Полная локализация и поддержка</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3 class="feature-title">Бесплатно всегда</h3>
+                        <p class="feature-desc">Никаких платежей и ограничений</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Футер -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-col">
+                        <div class="logo">
+                            <i class="fas fa-bolt"></i>
+                            <span>Soft<span class="highlight">Box</span></span>
+                        </div>
+                        <p>Бесплатные утилиты для оптимизации Windows</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-telegram"></i></a>
+                            <a href="#"><i class="fab fa-vk"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>Утилиты</h4>
+                        <ul>
+                            <li><a href="#software">Все программы</a></li>
+                            <li><a href="#">Оптимизация</a></li>
+                            <li><a href="#">Безопасность</a></li>
+                            <li><a href="#">Инструменты</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>Поддержка</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">О проекте</a></li>
+                            <li><a href="#admin">Админка</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>&copy; 2024 SoftBox. Все права защищены.</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Админ панель -->
+    <section id="admin" class="admin-panel">
+        <div class="container">
+            <div class="admin-container">
+                <div class="admin-header">
+                    <h2><i class="fas fa-cog"></i> Панель управления</h2>
+                    <p>Управляйте утилитами на сайте</p>
+                </div>
+                
+                <div class="admin-nav">
+                    <button class="admin-tab active" data-tab="add">Добавить утилиту</button>
+                    <button class="admin-tab" data-tab="list">Все утилиты</button>
+                    <button class="admin-tab" data-tab="stats">Статистика</button>
+                    <button class="admin-tab" id="backToSite">
+                        <i class="fas fa-arrow-left"></i> На сайт
+                    </button>
+                </div>
+                
+                <!-- Форма добавления -->
+                <div id="addTab" class="admin-content active">
+                    <form id="addSoftwareForm">
+                        <div class="form-group">
+                            <label for="name">Название утилиты *</label>
+                            <input type="text" id="name" class="form-control" required placeholder="Например: RAM Optimizer Pro">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="version">Версия *</label>
+                            <input type="text" id="version" class="form-control" required placeholder="Например: 1.0.0">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="description">Описание *</label>
+                            <textarea id="description" class="form-control" rows="3" required placeholder="Краткое описание программы"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="category">Категория *</label>
+                            <select id="category" class="form-control" required>
+                                <option value="">Выберите категорию</option>
+                                <option value="optimization">Оптимизация</option>
+                                <option value="security">Безопасность</option>
+                                <option value="tools">Инструменты</option>
+                                <option value="system">Системные</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="icon">Иконка (FontAwesome) *</label>
+                            <input type="text" id="icon" class="form-control" required placeholder="fa-memory, fa-broom, fa-wifi">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Тэги</label>
+                            <div class="tags-container">
+                                <div class="tag-option" data-tag="free">Бесплатно</div>
+                                <div class="tag-option" data-tag="portable">Portable</div>
+                                <div class="tag-option" data-tab="lightweight">Легковесный</div>
+                                <div class="tag-option" data-tag="russian">Русский</div>
+                                <div class="tag-option" data-tag="safe">Безопасный</div>
+                            </div>
+                            <input type="hidden" id="tags">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="size">Размер файла</label>
+                            <input type="text" id="size" class="form-control" placeholder="5.2 MB">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="downloadUrl">Ссылка для скачивания</label>
+                            <input type="url" id="downloadUrl" class="form-control" placeholder="https://example.com/download.exe">
+                        </div>
+                        
+                        <button type="submit" class="btn-submit">
+                            <i class="fas fa-plus"></i> Добавить утилиту
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Список утилит -->
+                <div id="listTab" class="admin-content">
+                    <div class="admin-software-list" id="adminSoftwareList">
+                        <!-- Утилиты загружаются здесь -->
+                    </div>
+                </div>
+                
+                <!-- Статистика -->
+                <div id="statsTab" class="admin-content">
+                    <div class="admin-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" id="adminTotalDownloads">0</div>
+                            <div class="stat-label">Всего скачиваний</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" id="adminTotalSoftware">0</div>
+                            <div class="stat-label">Утилит в каталоге</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">4.9</div>
+                            <div class="stat-label">Средний рейтинг</div>
+                        </div>
+                    </div>
+                    
+                    <div class="default-software" style="margin-top: 40px;">
+                        <h4>Экспорт/Импорт данных</h4>
+                        <div class="cta-buttons" style="flex-direction: column; align-items: stretch; gap: 10px;">
+                            <button class="btn btn-primary" id="exportBtn">
+                                <i class="fas fa-download"></i> Экспорт утилит (JSON)
+                            </button>
+                            <button class="btn btn-secondary" id="importBtn">
+                                <i class="fas fa-upload"></i> Импорт утилит
+                            </button>
+                            <button class="btn" style="background: #ff4757; color: white;" id="resetBtn">
+                                <i class="fas fa-trash"></i> Сбросить все данные
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Модальное окно скачивания -->
+    <div class="modal" id="downloadModal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <div class="modal-header">
+                <h3 id="modalTitle">Скачать утилиту</h3>
+            </div>
+            
+            <div class="modal-body" id="modalBody">
+                <!-- Контент загружается динамически -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
